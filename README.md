@@ -5,7 +5,7 @@ A simple/lightqwieght ETL project that uses Python, Pandas, and Matplotlib to cl
 
 This project extracts sales data from a CSV file, transforms it to compute useful KPIs such as total revenue and top-selling products, and visualizes revenue trends over time.
 
-#Key Objectives:
+# Key Objectives:
 
 Clean and preprocess the raw dataset.
 
@@ -13,7 +13,7 @@ Derive business metrics using Pandas.
 
 Visualize patterns in sales performance with Matplotlib.
 
-#Tools & Technologies
+# Tools & Technologies
 
 Language: Python
 
