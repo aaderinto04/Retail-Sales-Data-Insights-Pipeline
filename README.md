@@ -1,22 +1,68 @@
-# Retail-Sales-Data-Insights-Pipeline
-A simple/lightqwieght ETL project that uses Python, Pandas, and Matplotlib to clean and analyze sales data from Kaggle. The goal is to demonstrate essential data engineering skills — cleaning raw data, calculating KPIs, and visualizing insights.
+
+# Sales-Analytics-Data-Pipeline
+
+## Overview
+  The Sales Analytics Data Pipeline is a Python-based data analytics project designed to explore patterns within a sample sales dataset.
+  Using Pandas and Matplotlib, the project extracts and visualizes insights such as total revenue, top-selling products, and sales trends over time.
+  All data extraction, transformation, and visualization steps are automated through Python scripts.
+
+---
+
+## Tech Stack
+- **Python** — data processing and automation
+- **Pandas** — data manipulation and analysis
+- **Matplotlib** — static visualizations
 
 
+---
 
-This project extracts sales data from a CSV file, transforms it to compute useful KPIs such as total revenue and top-selling products, and visualizes revenue trends over time.
+## Dataset
 
-# Key Objectives:
+**Source:** [Sample Sales Data on Kaggle](https://www.kaggle.com/datasets/kyanyoga/sample-sales-data?resource=download)
 
-Clean and preprocess the raw dataset.
+**Columns include:**
+- OrderID
+- Product
+- Quantity
+- Price
+- OrderDate
+- CustomerID
+- Region
 
-Derive business metrics using Pandas.
 
-Visualize patterns in sales performance with Matplotlib.
+---
 
-# Tools & Technologies
+## How to Run
 
-Language: Python
+### 1. Clone the Repository
+```bash
+git clone https://github.com/aaderinto04/Retail-Sales-Data-Insights-Pipeline.git
+cd sales-analytics-data-pipeline
+```
+### 2. Create and Activate a Virtual Environment
+```bash
+python -m venv venv
+source venv/bin/activate   # for macOS/Linux
+venv\Scripts\activate      # for Windows
+```
+### 3. Install Dependencies
+```bash
+pip install pandas matplotlib
+```
+### 4. Add the Dataset
 
-Libraries: Pandas, Matplotlib
+Place the CSV file `sales_data_sample.csv` in the project directory.  
 
-Dataset: Kaggle - Sample Sales Data
+**Dataset Source:** [Sample Sales Data on Kaggle](https://www.kaggle.com/datasets/kyanyoga/sample-sales-data?resource=download)
+### 5. Run the ETL Script
+```bash
+python etl.py
+```
+### 6. Outputs
+
+**KPIs printed in terminal:**
+- Total revenue
+- Top-selling product line
+
+**Visualization with Matplotlib:**
+- Daily or monthly revenue trend line chart
